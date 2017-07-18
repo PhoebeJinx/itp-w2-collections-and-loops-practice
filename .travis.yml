@@ -12,4 +12,6 @@ install:
   - pip install -r dev-requirements.txt
 
 script:
-  - "py.test -v --tb=short group_projects"
+  - "py.test -v --tb=short create_box"
+  - "py.test -v --tb=short list_of_prime_numbers"
+  - "py.test -v --tb=short highest_number_cubed"
