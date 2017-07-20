@@ -15,3 +15,11 @@ script:
   - "py.test -v --tb=short create_box"
   - "py.test -v --tb=short list_of_prime_numbers"
   - "py.test -v --tb=short highest_number_cubed"
+
+notifications:
+  webhooks:
+    urls:
+      - https://rmotr.com/api/v1/webhooks/travis/project-resolved
+    on_success: always
+    on_failure: never
+    on_start: never
