@@ -1,5 +1,9 @@
 def highest_number_cubed(limit):
-    pass
+    for i in range(limit):
+        if (i ** 3) >= limit:
+            break
+    output = 1 if (limit < 3) else (i - 1)
+    return output
 
 
 def test_three():
